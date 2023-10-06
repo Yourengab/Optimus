@@ -13,24 +13,26 @@
     />
     <!-- CSS -->
     <link rel="stylesheet" href="./dist/output.css" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Optimus Portfolio</title>
   </head>
-  <body class="font-outfit tracking-tighter h-[2000px]">
+  <body class="font-outfit tracking-tighter h-[2000px] scroll-smooth">
     <!-- //---------------------header---------------------\\ -->
     <header>
       <nav id="navbar" class="fixed bottom-6 w-full tabletlg:left-10 tabletlg:top-20 z-10 transition-all duration-300 ease-in-out translate-y-[300%]">
         <ul class="bg-white shadow-xl flex justify-evenly rounded-full w-80 py-3 mx-auto tabletlg:mx-0 tabletlg:flex-col tabletlg:w-16 tabletlg:h-60 tabletlg:items-center tabletlg:gap-6 tabletlg:py-8">
           <li class="text-dark text-xl px-3 tabletlg:text-lg">
-            <a href=""><i class="fa-solid fa-house"></i></a>
+            <a href="#beranda"><i class="fa-solid fa-house"></i></a>
           </li>
           <li class="text-dark text-xl px-3 tabletlg:text-lg">
-            <a href=""><i class="fa-solid fa-user"></i></a>
+            <a href="#informasi"><i class="fa-solid fa-user"></i></a>
           </li>
           <li class="text-dark text-xl px-3 tabletlg:text-lg">
-            <a href=""><i class="fa-solid fa-user-graduate"></i></a>
+            <a href="#pendidikan"><i class="fa-solid fa-user-graduate"></i></a>
           </li>
           <li class="text-dark text-xl px-3 tabletlg:text-lg">
-            <a href=""><i class="fa-solid fa-phone"></i></a>
+            <a href="#kontak"><i class="fa-solid fa-phone"></i></a>
           </li>
         </ul>
       </nav>
@@ -38,15 +40,17 @@
     <!-- //---------------------end header---------------------\\ -->
     <main>
       <!-- //---------------------home---------------------\\ -->
-      <section>
+      <section id="beranda">
         <div class="py-24 container px-8 bg-[#E2FFE0] max-w-full">
           <div id="foto-profil" class="flex justify-center items-center gap-4">
-            <img src="./src/img/img-left.png" alt="img-left" class="rounded-2xl w-[100px] h-[153px]" />
-            <img src="./src/img/img-center.png" alt="img-center" class="rounded-2xl w-[130px] h-[200px]" />
-            <img src="./src/img/img-right.png" alt="img-right" class="rounded-2xl w-[100px] h-[153px]" />
+            <!--------------------------------- FOTO ----------------------------------->
+            <img src="./src/img/img-left.png" alt="img-left" class="rounded-2xl w-[100px] h-[153px]" data-aos="fade-up" data-aos-duration="600" />
+            <img src="./src/img/img-center.png" alt="img-center" class="rounded-2xl w-[130px] h-[200px]" data-aos="fade-down" data-aos-duration="1000" />
+            <img src="./src/img/img-right.png" alt="img-right" class="rounded-2xl w-[100px] h-[153px]" data-aos="fade-up" data-aos-duration="600" />
           </div>
           <div id="information flex justify-center">
-            <h1 id="nama-home" class="text-center text-2xl font-semibold mt-10">I Nyoman Suryadana</h1>
+            <!--------------------------------- NAMA ----------------------------------->
+            <h1 id="nama-home" class="text-center text-2xl font-semibold mt-10">KETIK NAMA LENGKAP</h1>
             <p class="text-center mt-6">Universitas Udayana | Fakultas Matematika dan Ilmu Pegetahuan Alam | Informatika</p>
             <div id="cta" class="mt-8 flex justify-center gap-6">
               <a href="" class="inline-block bg-main font-medium px-8 py-3 rounded-full text-sm">Informasi Pribadi</a>
@@ -61,20 +65,20 @@
       </section>
       <!-- //---------------------end home---------------------\\ -->
       <!-- //---------------------profile---------------------\\ -->
-      <section class="mt-12">
-        <div id="text-informasi-pribadi" class="introduction px-8 flex flex-wrap items-start justify-between gap-10 laptop:px-32">
+      <section id="informasi" class="py-12">
+        <div id="text-informasi-pribadi" class="introduction px-8 flex flex-wrap items-start justify-between gap-10 laptop:px-32" data-aos="fade-up" data-aos-duration="600">
           <h1 id="tentang-saya-header" class="font-semibold text-xl text-dark">Kenalan Lebih Dekat Dengan Saya Biar Keren😎</h1>
-          <p id="tentang-saya" class="text-dark max-w-lg">Hallo perkenalkan nama saya I Nyoman Suryadana, saya biasa di panggil surya, saya lahir di Denpasar pada tanggal 29 Mei 2005. Hobi saya adalah bermain Musik🎸 dan Memasak🍳.</p>
+          <p id="tentang-saya" class="text-dark max-w-lg">KETIK TENTANG DIRI KALIAN</p>
         </div>
-        <div id="informasi-pribadi" class="mt-16 flex justify-between flex-col gap-10 tablet:flex-row tablet:flex-wrap tablet:px-8 tablet:gap-20 laptop:px-32">
+        <div id="informasi-pribadi" class="mt-16 flex justify-between flex-col gap-10 tablet:flex-row tablet:flex-wrap tablet:px-8 tablet:gap-20 laptop:px-32" data-aos="fade-up" data-aos-duration="1000">
           <div id="gender" class="flex flex-col items-center">
             <div class="h-12 w-12 bg-white shadow-lg rounded-full text-center flex items-center justify-center"><i class="fa-solid fa-venus-mars"></i></div>
-            <h3 id="jenis-kelamin" class="mt-4">Laki-Laki</h3>
+            <h3 id="jenis-kelamin" class="mt-4">KETIK JENIS KELAMIN</h3>
           </div>
 
           <div id="birth" class="flex flex-col items-center">
             <div class="h-12 w-12 bg-white shadow-lg rounded-full text-center flex items-center justify-center"><i class="fa-solid fa-calendar"></i></div>
-            <h3 id="tanggal-lahir" class="mt-4 text-center">Denpasar, 29 Mei 2005</h3>
+            <h3 id="tanggal-lahir" class="mt-4 text-center">KETIK TANGGAL LAHIR</h3>
           </div>
 
           <div id="university" class="flex flex-col items-center">
@@ -95,44 +99,46 @@
       <!-- //---------------------end profile---------------------\\ -->
       <!-- //---------------------education---------------------\\ -->
       <div class="mt-20 px-8 w-full h-[1px] bg-dark rounded-full"></div>
-      <section class="mt-32">
-        <div class="container max-w-full px-8 flex flex-wrap justify-between gap-20 laptop:px-32">
+      <section id="pendidikan" class="pt-20">
+        <div class="container max-w-full px-8 flex flex-wrap justify-center gap-20 tabletlg:justify-between laptop:px-32" data-aos="fade-up" data-aos-duration="600">
+          <!--------------------------------- RIWAYAT PENDIDIKAN ----------------------------------->
           <div class="kelas">
-            <div class="tanggal px-4 py-2 bg-main w-32 text-center rounded-full">2011 - 2017</div>
+            <div class="tanggal px-4 py-2 bg-main w-32 text-center rounded-full">KETIK TAHUN SD</div>
             <img src="./src/img/sd.jpg" alt="kelas-sd" class="mt-8 w-[300px] h-[200px] rounded-2xl" />
             <p class="sd mt-4 font-medium text-dark">SD</p>
-            <h4 class="nama-sd text-xl text-dark">SD 2 Sesetan</h4>
+            <h4 class="nama-sd text-xl text-dark">KETIK NAMA SD</h4>
           </div>
           <div class="kelas">
-            <div class="tanggal px-4 py-2 bg-main w-32 text-center rounded-full">2017 - 2020</div>
+            <div class="tanggal px-4 py-2 bg-main w-32 text-center rounded-full">KETIK TAHUN SMP</div>
             <img src="./src/img/smp.png" alt="kelas-smp" class="mt-8 w-[300px] h-[200px] rounded-2xl" />
             <p class="smp mt-4 font-medium text-dark">SMP</p>
-            <h4 class="nama-smp text-xl text-dark">SMP Ganesha Denpasar</h4>
+            <h4 class="nama-smp text-xl text-dark">KETIK NAMA SMP</h4>
           </div>
           <div class="kelas">
-            <div class="tanggal px-4 py-2 bg-main w-32 text-center rounded-full">2020 - 2023</div>
+            <div class="tanggal px-4 py-2 bg-main w-32 text-center rounded-full">KETIK TAHUN SMA</div>
             <img src="./src/img/smk.jpg" alt="kelas-smk" class="mt-8 w-[300px] h-[200px] rounded-2xl" />
-            <p class="smk mt-4 font-medium text-dark">SMK</p>
-            <h4 class="nama-smk text-xl text-dark">SMK TI Bali Global Denpasar</h4>
+            <!--  -->
+            <p class="smk mt-4 font-medium text-dark">KETIK SMA/SMK</p>
+            <h4 class="nama-smk text-xl text-dark">KETIK NAMA SMA</h4>
           </div>
           <div class="kelas">
-            <div class="tanggal px-4 py-2 bg-main w-40 text-center rounded-full">2023 - Sekarang</div>
+            <div class="tanggal px-4 py-2 bg-main w-40 text-center rounded-full">KETIK TAHUN KULIAH</div>
             <img src="./src/img/kuliah.jpg" alt="kelas-univ" class="mt-8 w-[300px] h-[200px] rounded-2xl" />
             <p class="univ mt-4 font-medium text-dark">Universitas</p>
-            <h4 class="nama-univ text-xl text-dark">Universitas Udayana</h4>
+            <h4 class="nama-univ text-xl text-dark">KETIK NAMA KULIAH</h4>
           </div>
         </div>
       </section>
 
-      <section class="py-20 relative">
+      <section id="kontak" class="py-20 relative" data-aos="fade-up" data-aos-duration="600">
         <div class="overlay h-60 bg-black absolute opacity-90 left-0 right-0 mx-8 rounded-3xl flex justify-center items-center flex-col p-4 laptop:p-10 laptop:mx-32">
           <div class="w-12 h-12 bg-main flex justify-center items-center rounded-full text-black text-xl"><i class="fa-solid fa-comment"></i></div>
           <h1 class="font-semibold text-xl text-white mt-3">Ayo Ngobrol😍!</h1>
           <div class="kontak w-full flex flex-wrap justify-between mt-10 laptop:justify-evenly">
-            <div class="telp text-white flex items-center gap-4"><i class="fa-solid fa-phone"></i>0859-5892-4605</div>
-            <div class="email text-white flex items-center gap-4"><i class="fa-solid fa-message"></i>0859-5892-4605</div>
+            <div class="telp text-white flex items-center gap-4"><i class="fa-solid fa-phone"></i>KETIK NO TELP</div>
+            <div class="email text-white flex items-center gap-4"><i class="fa-solid fa-message"></i>KETIK EMAIL</div>
             <div class="linkedin text-white flex items-center gap-4">
-              <a href=""><i class="fa-solid fa-link"></i></a> <a href="">I Nyoman Suryadana</a>
+              <a href="https://www.linkedin.com/in/suryadana/"><i class="fa-solid fa-link"></i></a> <a href="https://www.linkedin.com/in/suryadana/">KETIK LINKEDIN</a>
             </div>
           </div>
         </div>
@@ -143,5 +149,10 @@
       <!-- //---------------------end education---------------------\\ -->
     </main>
   </body>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="./dist/script.js"></script>
 </html>
